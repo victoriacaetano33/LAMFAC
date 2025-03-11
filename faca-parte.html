@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Liga de Medicina da Família e Comunidade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com menu e logo -->
+    <header>
+        <nav>
+            <img src="img/logo.jpeg" alt="Logo da Liga" class="logo">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="extensao.html">Extensão</a></li>
+                <li><a href="pesquisa.html">Pesquisa</a></li>
+                <li><a href="ensino.html">Ensino</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="faca-parte.html">Faça Parte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <!-- Carrossel de imagens ocupando toda a largura -->
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="img/img10.jpeg" class="carousel-image">
+            <img src="img/img8.jpeg" class="carousel-image">
+            <img src="img/img7.jpeg" class="carousel-image">
+            <img src="img/img1.jpeg" class="carousel-image">
+            <img src="img/img3.jpeg" class="carousel-image">
+            <img src="img/img2.jpeg" class="carousel-image">
+            <img src="img/img5.jpeg" class="carousel-image">
+            <img src="img/img4.jpeg" class="carousel-image">
+            <img src="img/img6.jpeg" class="carousel-image">
+            <img src="img/img9.jpeg" class="carousel-image">
+	    <img src="img/img12.jpeg" class="carousel-image">
+ 	    <img src="img/img10.jpeg" class="carousel-image">
+            <img src="img/img8.jpeg" class="carousel-image">
+            <img src="img/img7.jpeg" class="carousel-image">
+            <img src="img/img1.jpeg" class="carousel-image">
+            <img src="img/img3.jpeg" class="carousel-image">
+            <img src="img/img2.jpeg" class="carousel-image"> 
+	    <img src="img/img1.jpeg" class="carousel-image">
+            <img src="img/img3.jpeg" class="carousel-image">
+            <img src="img/img2.jpeg" class="carousel-image">
+            <img src="img/img5.jpeg" class="carousel-image">
+  
+        </div>
+    </div>
+
+    <!-- Título da página     <section id="titulo-pagina">
+        <h1>Faça parte da LAMFAC!</h1>
+    </section>-->
+
+</br>
+
+    <!-- Se for a página 'Faça Parte', incluir espaço para imagem do processo seletivo -->
+    <section class="faca-parte-section" style="display: none;">
+        <img src="img/processo_seletivo.png" alt="Processo Seletivo" class="processo-seletivo-img">
+        <div class="info-box">
+            <h2>Faça Parte da LAMFAC</h2>
+            <p>🗓️Data da prova: 15/03 </br>
+		💲Taxa de inscrição: R$ 5,00 (chave pix no edital) </br>
+		📍Local: UNEMAT Cavalhada BE3-CAV-01 </br>
+		👉Todas as informações e link para formulário de inscrição constam no edital: </p>
+   	 <a href="https://drive.google.com/file/d/1UePwsS95cQ3weBjyFvaVzXZZX__c76NI/view?usp=drive_link" target="_blank">Saiba mais</a>
+        </div>
+    </section>
+
+ <footer>
+        <p>&copy; 2025 Liga de Medicina da Família e Comunidade - Unemat</p>
+	<img src="img/logounemat.png" alt="Logo da Unemat" class="logo">
+  </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Exibir seção especial apenas na página "Faça Parte"
+        if (window.location.pathname.includes("faca-parte.html")) {
+            document.querySelector(".faca-parte-section").style.display = "flex";
+        }
+    </script>
+</body>
+</html>

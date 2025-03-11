@@ -1,0 +1,94 @@
+/* Fundo da página */
+body {
+    background-color: #FFF8DC; /* Amarelo pastel */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilização do menu */
+header {
+    background: #004d40;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Carrossel */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel img {
+    width: 33.33%; /* Três imagens por vez */
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Blocos informativos */
+.info-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.info-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+/* Estilização específica para a seção "Faça Parte" */
+.faca-parte-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.processo-seletivo-img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Rodapé */
+footer {
+    background: #004d40;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}

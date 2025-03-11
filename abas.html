@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Liga de Medicina da Família e Comunidade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com menu e logo -->
+    <header>
+        <nav>
+            <img src="img/logo.png" alt="Logo da Liga" class="logo">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="extensao.html">Extensão</a></li>
+                <li><a href="pesquisa.html">Pesquisa</a></li>
+                <li><a href="ensino.html">Ensino</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="faca-parte.html">Faça Parte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carrossel de imagens -->
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="img/img1.jpg" class="carousel-image">
+            <img src="img/img2.jpg" class="carousel-image">
+            <img src="img/img3.jpg" class="carousel-image">
+        </div>
+    </div>
+
+    <!-- Título da página -->
+    <section id="titulo-pagina">
+        <h1>Título da Página</h1>
+    </section>
+
+    <!-- Bloco Ações de 2025 -->
+    <section class="acoes-section">
+        <h2>Ações de 2025</h2>
+        <p>Descrição das ações realizadas nesta área em 2025.</p>
+    </section>
+
+    <!-- Se for a página 'Faça Parte', incluir espaço para imagem do processo seletivo -->
+    <section class="faca-parte-section" style="display: none;">
+        <img src="img/processo_seletivo.jpg" alt="Processo Seletivo" class="processo-seletivo-img">
+        <div class="info-box">
+            <h2>Faça Parte da LAMFAC</h2>
+            <p>Descrição sobre como ingressar na liga.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Liga de Medicina da Família e Comunidade - Unemat</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Exibir seção especial apenas na página "Faça Parte"
+        if (window.location.pathname.includes("faca-parte.html")) {
+            document.querySelector(".faca-parte-section").style.display = "flex";
+        }
+    </script>
+</body>
+</html>
